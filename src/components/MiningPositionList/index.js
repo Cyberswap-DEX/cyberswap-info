@@ -9,7 +9,7 @@ import Link, { CustomLink } from '../Link'
 import { Divider } from '..'
 import DoubleTokenLogo from '../DoubleLogo'
 import { withRouter } from 'react-router-dom'
-import { formattedNum, getUniswapAppLink } from '../../utils'
+import { formattedNum, getuniswapAppLink } from '../../utils'
 import { AutoColumn } from '../Column'
 import { RowFixed } from '../Row'
 import { ButtonLight } from '../ButtonStyled'
@@ -103,7 +103,7 @@ const DataText = styled(Flex)`
 
 const SORT_FIELD = {
   VALUE: 'VALUE',
-  UNISWAP_RETURN: 'UNISWAP_RETURN',
+  uniswap_RETURN: 'uniswap_RETURN',
 }
 
 function MiningPositionList({ miningPositions }) {
@@ -159,11 +159,11 @@ function MiningPositionList({ miningPositions }) {
               </TYPE.main>
             </CustomLink>
             <RowFixed gap="8px" justify="flex-start">
-              <Link external href={getUniswapAppLink(firstPairAddress)} style={{ marginRight: '.5rem' }}>
+              <Link external href={getuniswapAppLink(firstPairAddress)} style={{ marginRight: '.5rem' }}>
                 <ButtonLight style={{ padding: '4px 6px', borderRadius: '4px' }}>Stake More</ButtonLight>
               </Link>
               {pairPercentage > 0 && (
-                <Link external href={getUniswapAppLink(firstPairAddress)}>
+                <Link external href={getuniswapAppLink(firstPairAddress)}>
                   <ButtonLight style={{ padding: '4px 6px', borderRadius: '4px' }}>Withdraw</ButtonLight>
                 </Link>
               )}

@@ -165,7 +165,7 @@ function SideNav({ history }) {
           <AutoColumn gap="0.5rem" style={{ marginLeft: '.75rem', marginBottom: '4rem' }}>
             <HeaderText>
               <Link href="https://uniswap.org" target="_blank">
-                Uniswap.org
+                uniswap.org
               </Link>
             </HeaderText>
             <HeaderText>
@@ -184,7 +184,7 @@ function SideNav({ history }) {
               </Link>
             </HeaderText>
             <HeaderText>
-              <Link href="https://twitter.com/UniswapProtocol" target="_blank">
+              <Link href="https://twitter.com/uniswapProtocol" target="_blank">
                 Twitter
               </Link>
             </HeaderText>
@@ -202,10 +202,10 @@ function SideNav({ history }) {
           )}
         </DesktopWrapper>
       ) : (
-        <MobileWrapper>
-          <Title />
-        </MobileWrapper>
-      )}
+          <MobileWrapper>
+            <Title />
+          </MobileWrapper>
+        )}
     </Wrapper>
   )
 }
